@@ -1,0 +1,261 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #001446;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+
+.text--primary{
+    color: white;
+}
+
+.text--secondary{
+    color: #00DDBE;
+}
+
+.text--tertiary{
+    color: #407FC1;
+}
+
+
+.bg--primary{
+    background: #001446;
+    color: white
+}
+
+.bg--secondary{
+    background: #F1F5FA;
+}
+
+.bg--tertiary{
+    background: #407FC1;
+    color: white;
+}
+
+.btn{
+    border-radius: 3.125rem; 
+    border: none;
+    color: #001446;
+    cursor: pointer;
+}
+.btn-remove{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn--primary{
+    background-color: #00DDBE; 
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    
+}
+
+.btn-lg{
+    font-size: 1.25rem;
+    font-weight: 600; 
+    padding: 0.75rem 3.25rem 1rem;
+}
+
+.btn-sm{
+    font-size: 1.25rem;
+    font-weight: 600; 
+    padding: 0.75rem 2.25rem 0.875rem;
+}
+
+
+
+.site-header{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4.5rem 2.5rem;
+    align-items: center;
+    gap: 7.25rem
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    gap: 54px;  
+}
+
+.nav__item{
+    list-style: none;
+    
+}
+
+
+.section{
+    padding: 4.375rem  8.75rem 6.25rem;  
+}
+
+.mission-section{
+    width: full;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.mission-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 6.375rem 15rem 10rem 8.75rem;
+    gap: 1rem;
+}
+
+.mission-title{
+    font-size: 3.75rem; 
+    font-weight: 700;    
+    line-height: 4rem;
+}
+
+.mission-describe{
+    font-size: 1.25rem;       
+    font-weight: 400;       
+    line-height: 2;   
+}
+
+.mission-btn{
+    align-items: center;
+    padding-top:  0.625rem;
+    padding-bottom: 0.625rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.awards-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    
+}
+
+.awards-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;   
+    
+}
+
+.awards-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-icon{
+    padding-bottom: 0.5rem;
+}
+
+.title-award{
+    padding-bottom: 1.5rem;
+}
+
+.sponsorship-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4.625rem;
+    align-items: center;
+    padding-bottom: 7.125rem;
+
+}
+
+.sponsorship-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.sponsorship-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsorship-card__amount{
+    font-size: 4.5rem;      
+    font-weight: 300;      
+    line-height: 80px;
+}
+
+.title-field{
+    padding-top: 1.5rem;
+}
+
+.news-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4.625rem;
+}
+
+.news-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5.375rem;
+    width: 100%;
+    padding-top: 4.75rem;
+    padding-bottom: 19.125rem;
+    
+}
+
+.news-item{
+    position: relative;
+    flex: 1;    
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 3 / 2; 
+    border-radius: 0.5rem;
+}
+
+.news-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;  
+    padding: 2.75rem 1.75rem;
+    gap: 0.75rem;
+    top: 80%;
+    width: 90%;
+    left: 5%;
+    
+    
+}
+
+.news-date{
+    font-size: 1rem; 
+    font-weight: 700; 
+    text-transform: uppercase;
+    line-height: 1.25
+}
+
+.news-describe{
+    font-size: 1.125rem;      
+    font-weight: 400;       
+    line-height: 1.625; 
+}
+
