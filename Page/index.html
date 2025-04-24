@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./img/Group.svg">
 </head>
 <body>
-    <header class="site-header">
-        <div class="site-header__logo">
+    <header class="header">
+        <div class="header__logo">
             <img src="./img/logo.png" alt="">
         </div>
-        <nav class="main-nav">
+        <nav class="main__nav">
             <ul class="nav__list">
                 <li class="nav__item">About</li>
                 <li class="nav__item">How We Give</li>
@@ -21,137 +21,235 @@
                 <li class="nav__item">Contact</li>
             </ul>
         </nav>
-        <button class="btn btn--primary btn-lg">Donate</button>
+        <button class="header__btn btn btn--primary btn--large">Donate</button>
+        <input type="checkbox" id="nav__menu--open">
+        <label for="nav__menu--open"  class="nav__mobile-btn ">
+            <img src="./img/menu.svg" alt="Menu" />
+        </label>
+        <label for="nav__menu--open" class="overlay"></label>
+
+        
+
+        <label  class="nav__mobile">
+            <ul class="nav_list_mobile">
+                <li class="nav___mobile__item">About</li>
+                <li class="nav___mobile__item">How We Give</li>
+                <li class="nav___mobile__item">Donations & Support</li>
+                <li class="nav___mobile__item">News</li>
+                <li class="nav___mobile__item">Contact</li>
+            </ul>
+        </label>
+
+        
     </header>
 
     <main>
-        <section class="mission-section">
-            <div class="mission-content">
-                <h1 class="mission-title text--primary">Our Mission</h1>
-                <p class="mission-describe text--primary">ARCF is dedicated to promoting respiratory health through research, education, and patient-focused philanthropic activities.</p>
-                <div class="mission-btn">
-                    <button class="btn btn--secondary btn-lg">Apply</button>
-                    <button class="btn btn--secondary btn-lg">Donate</button>
+        <section class="mission__section">
+            <div class="mission__content">
+                <h1 class="mission__title text--primary">Our Mission</h1>
+                <p class="mission__describe text--primary">ARCF is dedicated to promoting respiratory health through research, education, and patient-focused philanthropic activities.</p>
+                <div class="mission__btn">
+                    <button class="btn btn--secondary btn--large">Apply</button>
+                    <button class="btn btn--secondary btn--large">Donate</button>
                 </div>
             </div>
 
-            <div class="mission-img">
+            <div class="mission__img">
                 <img src="./img/mission.png" alt="">
             </div>
 
         </section>
 
-        <section class="section awards-section">
-            <h1 class="award-title">How We Give</h1>
-            <div class="awards-list">
-                <div class="awards-item">
-                    <img class="award-icon" src="./img/GraduationCap.svg" alt="">
+        <section class="section awards__section">
+            <h1 class="award__title">How We Give</h1>
+            <div class="awards__list">
+                <div class="awards__item">
+                    <img class="award__icon" src="./img/GraduationCap.svg" alt="">
                     <h3>Student</h3>
-                    <h3 class="title-award">& Awards</h3>
-                    <button class="btn btn--primary btn-sm">Apply Now</button>
+                    <h3 class="title__award">& Awards</h3>
+                    <button class="btn btn--primary btn--small">Apply Now</button>
                 </div>
 
-                <div class="awards-item">
+                <div class="awards__item">
                     <img src="./img/BookOpenText.svg" alt="">
                     <h3>Research Awards</h3>
-                    <h3 class="title-award">& Grants</h3>
-                    <button class="btn btn--primary btn-sm">Apply Now</button>
+                    <h3 class="title__award">& Grants</h3>
+                    <button class="btn btn--primary btn--small">Apply Now</button>
                 </div>
 
-                <div class="awards-item">
+                <div class="awards__item">
                     <img src="./img/Trophy.svg" alt="">
                     <h3>Achievement</h3>
-                    <h3 class="title-award">Awards</h3>
-                    <button class="btn btn--primary btn-sm">Apply Now</button>
+                    <h3 class="title__award">Awards</h3>
+                    <button class="btn btn--primary btn--small">Apply Now</button>
                 </div>
 
-                <div class="awards-item">
+                <div class="awards__item">
                     <img src="./img/Globe.svg" alt="">
                     <h3>International</h3>
-                    <h3 class="title-award">Fellowships</h3>
-                    <button class="btn btn--primary btn-sm">Apply Now</button>
-                </div>
-                
+                    <h3 class="title__award">Fellowships</h3>
+                    <button class="btn btn--primary btn--small">Apply Now</button>
+                </div> 
             </div>
-
         </section>
 
-        <section class="section sponsorship-section bg--primary">
+        <section class="section sponsorship__section bg--primary">
             <h1>What We Gave in 2020</h1>
-            <div class="sponsorship-list">
-                <div class="sponsorship-item">
-                    <h1 class="sponsorship-card__amount text--secondary">$23,766</h1>
-                    <h3 class="title-field">In Student</h3>
+            <div class="sponsorship__list">
+                <div class="sponsorship__item">
+                    <h1 class="sponsorshipcard__amount text--secondary">$23,766</h1>
+                    <h3 class="title__field">In Student</h3>
                     <h3>Education Awards</h3>
                 </div>
 
-                <div class="sponsorship-item">
-                    <h1 class="sponsorship-card__amount text--secondary">$9,216</h1>
-                    <h3 class="title-field">In Research</h3>
+                <div class="sponsorship__item">
+                    <h1 class="sponsorshipcard__amount text--secondary">$9,216</h1>
+                    <h3 class="title__field">In Research</h3>
                     <h3>Awards & Grants</h3>
                 </div>
 
-                <div class="sponsorship-item">
-                    <h1 class="sponsorship-card__amount text--secondary">$8,041</h1>
-                    <h3 class="title-field">In Achievement</h3>
+                <div class="sponsorship__item">
+                    <h1 class="sponsorshipcard__amount text--secondary">$8,041</h1>
+                    <h3 class="title__field">In Achievement</h3>
                     <h3>Awards</h3>
                 </div>
 
-                <div class="sponsorship-item">
-                    <h1 class="sponsorship-card__amount text--secondary">$3,900</h1>
-                    <h3 class="title-field">In Fellowships</h3>
+                <div class="sponsorship__item">
+                    <h1 class="sponsorshipcard__amount text--secondary">$3,900</h1>
+                    <h3 class="title__field">In Fellowships</h3>
                     <h3 >Given</h3>
                 </div>
             </div>
         </section>
 
-        <section class="section news-section">
+        <section class="section news__section">
             <h1>Foundation News</h1>
-            <div class="news-list">
-                <div class="news-item">
+            <div class="news__list">
+                <div class="news__item">
                     <img src="./img/news1.jpg" alt="">
-                    <div class="news-content bg--secondary">
-                        <h4 class="news-date text--tertiary">AUGUST 15, 2024</h4>
+                    <div class="news__content bg--secondary">
+                        <h4 class="news__date text--tertiary">AUGUST 15, 2024</h4>
                         <h4>ARCF 2024 Fundraising Event</h4>
-                        <p class="news-describe">Come together on Nov. 19 with the ARCF and your colleagues and friends to support and advance the respiratory care profession...</p>
+                        <p class="news__describe">Come together on Nov. 19 with the ARCF and your colleagues and friends to support and advance the respiratory care profession...</p>
                     </div>
                 </div>
 
-                <div class="news-item">
+                <div class="news__item">
                     <img src="./img/news2.jpg" alt="">
-                    <div class="news-content bg--secondary">
-                        <h4 class="news-date text--tertiary">AUGUST 15, 2024</h4>
+                    <div class="news__content bg--secondary">
+                        <h4 class="news__date text--tertiary">AUGUST 15, 2024</h4>
                         <h4>ARCF 2024 Fundraising Event</h4>
-                        <p class="news-describe">Come together on Nov. 19 with the ARCF and your colleagues and friends to support and advance the respiratory care profession...</p>
+                        <p class="news__describe">Come together on Nov. 19 with the ARCF and your colleagues and friends to support and advance the respiratory care profession...</p>
                     </div>
                 </div>
 
-                <div class="news-item .bg--secondary">
+                <div class="news__item .bg--secondary">
                     <img src="./img/news3.png" alt="">
-                    <div class="news-content bg--secondary">
-                        <h4 class="news-date text--tertiary">AUGUST 15, 2024</h4>
+                    <div class="news__content bg--secondary">
+                        <h4 class="news__date text--tertiary">AUGUST 15, 2024</h4>
                         <h4>ARCF 2024 Fundraising Event</h4>
-                        <p class="news-describe">Come together on Nov. 19 with the ARCF and your colleagues and friends to support and advance the respiratory care profession...</p>
+                        <p class="news__describe">Come together on Nov. 19 with the ARCF and your colleagues and friends to support and advance the respiratory care profession...</p>
                     </div>
                 </div>
             </div>
             <div>
-                <button class="btn-remove"><img src="./img/ArrowCircleLeft.png" alt=""></button>
-                <button class="btn-remove"><img src="./img/ArrowCircleRight.svg" alt=""></button>
+                <button class="btn btn--remove"><img src="./img/ArrowCircleLeft.png" alt=""></button>
+                <button class=" btn btn--remove"><img src="./img/ArrowCircleRight.svg" alt=""></button>
             </div>
         </section>
 
-        <section class="conference-section">
-            <div class="conference-content conference-left bg--tertiary">
-                
+        <section class="conference__section">
+            <div class="conference__left bg--tertiary">
+                <div class="">
+                    <h3 class="conference__title">Your Donations Support Our Mission</h3>
+                    <p class="conference__describe">The American Respiratory Care Foundation is a nonprofit organization 
+                        formed for the purpose of supporting research, education, and charitable activities.
+                        <br>
+                        <br>
+                        The ARCF seeks to educate the public about respiratory health, assist in the training and 
+                        continuing education of health care providers, and improve the quality of our environment.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn btn--primary btn--large">Donate Now</button>
+                </div>
             </div>
 
-            <div class="conference-content conference-right bg--primary">
-                
-                
+            <div class="conference__right bg--primary">
+                <div class="conference__contentright">
+                    <h3 class="conference__title">61st Respiratory Care <br> Journal Conference</h3>
+                    <p class="conference__describe">June 19-21, 2024 <br> Tampa, FL</p>
+                    <p class="conference__info">Pediatric Asthma: Management <br> Across the Continuum of Care</p>
+                    <button class="btn btn--primary btn--large">Sponsorship Opportunities</button>  
+                </div>
+                <div class="conference__img">
+                    <img src="./img/conference.png" alt=""> 
+                </div>               
             </div>
         </section>
     </main>
-    
+
+    <footer>
+        <div class="footer-content">
+            <!-- Information  -->
+            <div class="footer__section">
+                <div class="footer__logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div>
+                    <p class="footer__describe">9425 North MacArthur Blvd,
+                        <br>
+                        Suite 100
+                        <br>
+                        Irving, TX 75063-4706
+                        <br>
+                        <br>
+                        <strong>Phone</strong>: (972) 243-2272
+                        <br>
+                        <strong>Fax</strong>: (972) 484-2720
+                        <br>
+                        <strong>E-Mail Us</strong>
+                    </p>
+                </div>
+            </div>
+            <!-- About us -->
+            <div class="footer__section">
+                <h4 class="footer__title">About us</h4>
+                <p class="footer__describe">The American Respiratory Care Foundation is a nonprofit organization 
+                    formed for the purpose of supporting research, education, and charitable activities.
+                    <br>
+                    <br>
+                    The ARCF seeks to educate the public about respiratory health, assist in the training and 
+                    continuing education of health care providers, and improve the quality of our environment.
+                </p>
+            </div>
+            <!-- How we give -->
+            <div class="footer__section">
+                <h4 class="footer__title">How We Give</h4>  
+                <p class="footer__describe footer-describe--line">Student Awards</p>
+                <p class="footer__describe footer-describe--line">Research Awards & Grants</p>
+                <p class="footer__describe footer-describe--line">Achievement Awards</p>
+                <p class="footer__describe footer-describe--line">Literary Awards</p>
+                <p class="footer__describe">International Fellowship Program</p>
+            </div>
+            <!-- Donations & Support -->
+            <div class="footer__section">
+                <h4 class="footer__title">Donations & Support</h4>  
+                <p class="footer__describe footer-describe--line">Make A Donation</p>
+                <p class="footer__describe footer-describe--line">Endowments</p>
+                <p class="footer__describe footer-describe--line">Sponsors and Donors</p>
+                <p class="footer__describe">Support for International Fellowships</p>
+            </div>
+        </div>
+
+        <!-- footer copyright -->
+         <div class="footer-copyright">
+            <p>© 2024 American Respiratory Care Foundation. All Rights Reserved.</p>
+            <p>The American Respiratory Care Foundation is a 501(c)(3) charitable organization.</p>
+         </div>
+
+
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
