@@ -277,6 +277,10 @@ a {
     background-color: #f0f0f0;  
 }
 
+.btn__header {
+    padding: 0.875rem 3.25rem;
+}
+
 
 
 .uppercase{
@@ -407,13 +411,17 @@ a {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 6.375rem 15rem 10rem 8.75rem;
+    padding: 6.375rem 0.75rem 10rem 8.75rem;
     gap: 1rem;
 }
 
 
 .mission__describe{
     
+}
+
+.btn__mision{
+    padding: 0.75rem 2.25rem;
 }
 
 .mission__btn{
