@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How We Give</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./img/Group.svg">
@@ -14,11 +22,11 @@
         </div>
         <nav class="main__nav">
             <ul class="nav__list">
-                <li class="nav__item">About</li>
-                <li class="nav__item">How We Give</li>
-                <li class="nav__item">Donations & Support</li>
-                <li class="nav__item">News</li>
-                <li class="nav__item">Contact</li>
+                <a href="./about.html"><li class="nav__item">About</li></a>
+                <a href="./how-we-give.html"><li class="nav__item">How We Give</li></a>
+                <a href="./index.html"><li class="nav__item">Donations & Support</li></a>
+                <a href="./news.html"><li class="nav__item">News</li></a>
+                <a href="./contact.html"><li class="nav__item">Contact</li></a>
             </ul>
         </nav>
         <button class="header__btn btn btn--primary btn--large">Donate</button>
@@ -30,7 +38,7 @@
 
         
 
-        <label  class="nav__mobile">
+        <div  class="nav__mobile">
             <ul class="nav_list_mobile">
                 <li class="nav___mobile__item">About</li>
                 <li class="nav___mobile__item">How We Give</li>
@@ -38,54 +46,103 @@
                 <li class="nav___mobile__item">News</li>
                 <li class="nav___mobile__item">Contact</li>
             </ul>
-        </label>
+        </div>
 
         
     </header>
 
     <main>
         <section class="howwegive__title">
-            <h1 class="text-6xl font-bold leading-16 text--primary">Student Awards</h1>
+            <h3 class="text-6xl font-bold leading-16 text--primary">Contact Us </h3>
         </section>
 
-        <section class="infomation">
-            <div class="bg--primary information__title">
-                <h3 class="text-lg font-bold uppercase leading-relaxed">UNDERGRADUATE  <span class="p-3">|</span>   POST GRADUATE</h3>
-            </div>
-            <div class="sections information__content">
-                <h1 class="text-5xl font-bold leading-14">Undergraduate Student Awards</h1>
-                <div class="information__box">
-                    <h3 class="text-3xl font-semibold leading-loose text--tertiary">Morton B. Duggan, Jr. Memorial Education Recognition Award</h3>
-                    <div>
-                        <div class="information__box__right">
-                            <p class="text--tertiary text-lg font-semibold leading-relaxed">General Information</p>
-                            <p class="text-lg font-normal leading-relaxed">Requirements</p>
-                            <p class="text-lg font-normal leading-relaxed">Application</p>
-                            <p class="text-lg font-normal leading-relaxed">Past Award Recipients</p>
-                        </div>
-                        <div class="information__box__leff">
-                            <p class= "text-lg font-normal leading-relaxed">
-                                The Morton B. Duggan, Jr. Memorial Education Recognition Award is awarded to a student 
-                                currently enrolled in an accredited respiratory care education program. Preference given 
-                                to candidates from Georgia and South Carolina.
+        <section class="contact__section section">
+            <div class="contact__left">
+                <p class="text-2xl font-semibold leading-7 text--tertiary ">Contact Information</p>
+                <div class="pt-7">
+                    <p class="text-lg font-semibold leading-relaxed">Mailing Address:</p>
+                    <p class="text-base font-normal leading-normal pb-3 line">
+                        American Respiratory Care Foundation  <br>
+                        Attn: Crystal Leighton 9425 North MacArthur Blvd, Suite 100 <br>
+                        Irving, TX 75063-4706
+                    </p>
 
-                                The American Respiratory Care Foundation may award up to $1,000 in memory of Morton B. Duggan, Jr. Applicants/nominees are accepted 
-                                from all states, with preference given to candidates from Georgia and South Carolina. This award consists of a certificate of recognition, 
-                                coach airfare, one night’s lodging, and registration for AARC Congress.
-                            </p>
-                        </div>
-
-
-                    </div>
-
+                    <p class="pt-3 pb-2 line text-base font-normal leading-normal"><strong>Phone</strong>: (972) 484-2720</p>
+                    <p class="pt-3 pb-2 text-base font-normal leading-normal"><strong>Fax</strong>: (972) 484-2720/p>
                 </div>
 
             </div>
+            <div class="contact__right">
+                <h3 class="text-2xl font-semibold leading-7 text--tertiary">Send Us a Message</h3>
+                <form action="" class="contact__form">
+                    <div class="form__box">
+                        <label class="text-lg font-semibold leading-relaxed" for="">Name*</label>
+                        <input type="text">
+                    </div>
 
+                    <div class="form__box">
+                        <label class="text-lg font-semibold leading-relaxed" for="">Email*</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form__box">
+                        <label class="text-lg font-semibold leading-relaxed" for="">Phone*</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="">
+                        <label class="text-lg font-semibold leading-relaxed pb-6 block" for="">Subject*</label>
+                        <div class="checkbox-wrapper ">
+                            <input type="checkbox" id="circle-checkbox">
+                            <label for="circle-checkbox"></label>
+                            <p class="text-lg font-normal leading-relaxed">Website Issues</p>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="circle-checkbox">
+                            <label for="circle-checkbox"></label>
+                            <p class="text-lg font-normal leading-relaxed">Sponsorship</p>
+                        </div>
+
+                        <div class="checkbox-wrapper ">
+                            <input type="checkbox" id="circle-checkbox">
+                            <label for="circle-checkbox"></label>
+                            <p class="text-lg font-normal leading-relaxed">Donations</p>
+                        </div>
+
+                        <div class="checkbox-wrapper ">
+                            <input type="checkbox" id="circle-checkbox">
+                            <label for="circle-checkbox"></label>
+                            <p class="text-lg font-normal leading-relaxed">International Fellowships</p>
+                        </div>
+
+                        <div class="checkbox-wrapper ">
+                            <input type="checkbox" id="circle-checkbox">
+                            <label for="circle-checkbox"></label>
+                            <p class="text-lg font-normal leading-relaxed">Applications</p>
+                        </div>
+
+                        <div class="checkbox-wrapper ">
+                            <input type="checkbox" id="circle-checkbox">
+                            <label for="circle-checkbox"></label>
+                            <p class="text-lg font-normal leading-relaxed">Suggestions or Comments</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__message">
+                        <label class="text-lg font-semibold leading-relaxed" for="">Message*</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+
+                    <div>
+                        <button class="btn btn--medium  btn--primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
         </section>
-
        
-
+       
         <section class="conference__section">
             <div class="conference__left bg--tertiary">
                 <div class="">
@@ -178,6 +235,9 @@
 
 
     </footer>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+    
 </body>
 </html>
