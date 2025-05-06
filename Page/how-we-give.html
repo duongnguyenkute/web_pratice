@@ -10,37 +10,37 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="./img/logo.png" alt="">
+          <a href="./index.html"><img src="./img/logo.png" alt="" /></a>
         </div>
         <nav class="main__nav">
-            <ul class="nav__list">
-                <a href="./about.html"><li class="nav__item">About</li></a>
-                <a href="./how-we-give.html"><li class="nav__item">How We Give</li></a>
-                <a href="./index.html"><li class="nav__item">Donations & Support</li></a>
-                <a href="./news.html"><li class="nav__item">News</li></a>
-                <a href="./contact.html"><li class="nav__item">Contact</li></a>
-            </ul>
+          <ul class="nav__list">
+            <a href="./about.html"><li class="nav__item">About</li></a>
+            <a href="./how-we-give.html"
+              ><li class="nav__item">How We Give</li></a
+            >
+            <a href="./index.html"
+              ><li class="nav__item">Donations & Support</li></a
+            >
+            <a href="./news.html"><li class="nav__item">News</li></a>
+            <a href="./contact.html"><li class="nav__item">Contact</li></a>
+          </ul>
         </nav>
         <button class="header__btn btn btn--primary btn__header">Donate</button>
-        <input type="checkbox" id="nav__menu--open">
-        <label for="nav__menu--open"  class="nav__mobile-btn ">
-            <img src="./img/menu.svg" alt="Menu" />
+        <input type="checkbox" id="nav__menu--open" />
+        <label for="nav__menu--open" class="nav__mobile-btn">
+          <img src="./img/menu.svg" alt="Menu" />
         </label>
         <label for="nav__menu--open" class="overlay"></label>
-
-        
-
-        <div  class="nav__mobile">
-            <ul class="nav_list_mobile">
-                <li class="nav___mobile__item">About</li>
-                <li class="nav___mobile__item">How We Give</li>
-                <li class="nav___mobile__item">Donations & Support</li>
-                <li class="nav___mobile__item">News</li>
-                <li class="nav___mobile__item">Contact</li>
-            </ul>
+  
+        <div class="nav__mobile">
+          <ul class="nav_list_mobile">
+            <a href="./about.html"><li class="nav___mobile__item">About</li></a>
+            <a href="./how-we-give.html"><li class="nav___mobile__item">How We Give</li></a>
+            <a href="./index.html"><li class="nav___mobile__item">Donations & Support</li></a>
+            <a href="./news.html"><li class="nav___mobile__item">News</li></a>
+            <a href="./contact.html"><li class="nav___mobile__item">Contact</li></a>
+          </ul>
         </div>
-
-        
     </header>
 
     <main>
@@ -56,42 +56,28 @@
                 <h3 class="information__content__title text-5xl font-bold leading-14">Undergraduate Student Awards</h3>
                 <div class="information__box">
                     <h3 class=" pb-6 text-3xl font-semibold leading-tight text--tertiary">Morton B. Duggan, Jr. Memorial Education Recognition Award</h3>
-                    <div class="information__box__content">
+                    <div class="information__box__content" data-tab-group="1">
                         <div class="information__box__left">
-                            <p class="box__left__subtitle--true py-5 text--tertiary text-lg font-semibold leading-relaxed ">General Information</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed  ">Requirements</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Application</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Past Award Recipients</p>
+                            <p class="box__left__subtitle py-5 text-lg font-semibold text--tertiary background__remove leading-relaxed" onclick="changeTab('general',1)">General Information</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('requirements',1)">Requirements</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('application',1)">Application</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('recipients',1)">Past Award Recipients</p>
                         </div>
                         <div class="information__box__right">
-                            <p class= "pt-6 text-lg font-normal leading-relaxed">
-                                The Morton B. Duggan, Jr. Memorial Education Recognition Award is awarded to a student 
-                                currently enrolled in an accredited respiratory care education program. Preference given 
-                                to candidates from Georgia and South Carolina.
-                                <br>
-                                <br>
-                                The American Respiratory Care Foundation may award up to $1,000 in memory of Morton B. Duggan, Jr. Applicants/nominees are accepted 
-                                from all states, with preference given to candidates from Georgia and South Carolina. This award consists of a certificate of recognition, 
-                                coach airfare, one night’s lodging, and registration for AARC Congress.
-                            </p>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-                <div class="information__box">
-                    <h3 class="information__box__title pb-6 text-3xl font-semibold leading-tight text--tertiary">Jimmy A. Young Memorial Education Recognition Award</h3>
-                    <div class="information__box__content">
-                        <div class="information__box__left">
-                            <p class="box__left__subtitle py-5 text--tertiary text-lg font-semibold leading-relaxed ">General Information</p>
-                            <p class="box__left__subtitle--true py-5 text-lg font-normal leading-relaxed  ">Requirements</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Application</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Past Award Recipients</p>
-                        </div>
-                        <div class="information__box__right">
-                            <div class= "pt-6 text-lg font-normal leading-relaxed">
+                            <div id="general" class="tab__content">
+                                <p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    The Morton B. Duggan, Jr. Memorial Education Recognition Award is awarded to a student 
+                                    currently enrolled in an accredited respiratory care education program. Preference given 
+                                    to candidates from Georgia and South Carolina.
+                                    <br>
+                                    <br>
+                                    The American Respiratory Care Foundation may award up to $1,000 in memory of Morton B. Duggan, Jr. Applicants/nominees are accepted 
+                                    from all states, with preference given to candidates from Georgia and South Carolina. This award consists of a certificate of recognition, 
+                                    coach airfare, one night’s lodging, and registration for AARC Congress.
+                                </p>
+                            </div>
+                            <div id="requirements" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
                                <ul>
                                 <li>Completed application form.</li>
                                 <br>
@@ -110,150 +96,508 @@
                                </ul>
                                <p>Please note that the application deadline is June 1.</p>
                             </div>
-                            
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-                <div class="information__box">
-                    <h3 class="information__box__title pb-6 text-3xl font-semibold leading-tight text--tertiary">NBRC William W. Burgin, Jr., MD and Robert M. Lawrence, MD Education Recognition Award</h3>
-                    <div class="information__box__content">
-                        <div class="information__box__left">
-                            <p class="box__left__subtitle py-5 text--tertiary text-lg font-semibold leading-relaxed ">General Information</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed  ">Requirements</p>
-                            <p class="box__left__subtitle--true py-5 text-lg font-normal leading-relaxed ">Application</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Past Award Recipients</p>
-                        </div>
-                        <div class="information__box__right">
-                            <div class= "pt-6 text-lg font-normal leading-relaxed">
-                                <p class="underline">Paper Submission Guidelines</p>
-                                <p class="underline">Points to Consider in Submitting an Essay</p>
-                                <br>
-                                <ul>
-                                    <li>In addition to submitting some basic personal information, you will also be required to:
-                                        <ul class="">
-                                            <li class="li__sub">Attach an original referenced paper on some aspect of respiratory care to the online form if applying for an undergraduate award. 
-                                                The paper should include a cover page giving only the title of the paper, and should be devoid of any information such as applicant’s 
-                                                name, address, or school that could provide a bias in the evaluation. <span class="underline">See Paper Submission Guidelines</span></li>
-                                            <li class="li__sub">Attach a personal essay of at least 1,200 words describing how this award will assist the applicant in reaching the objective of a degree 
-                                                and the candidate’s ultimate goals of leadership in health care if applying for the William W. Burgin/Robert Lawrence award. The paper should 
-                                                include a cover page with the author’s name, address, and phone number. The body of the paper should be devoid of any information such as applicant’s 
-                                                name, address, or school that could provide a bias in the evaluation. See <span class="underline">Points to Consider in Submitting an Essay</span></li>    
-                                        </ul>
-                                    </li>
+                            </div>
+                            <div id="application" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <p class="underline">Paper Submission Guidelines</p>
+                                    <p class="underline">Points to Consider in Submitting an Essay</p>
                                     <br>
-                                    <li>Applications are accepted Jan. 1 June 1. Applications will not be considered unless all supporting documents have been sent.</li>
-                                    <br>
-                                    <li>Previous undergraduate award recipients are eligible to reapply. Previous postgraduate award recipients </li>
-                                </ul>
+                                    <ul>
+                                        <li>In addition to submitting some basic personal information, you will also be required to:
+                                            <ul class="">
+                                                <li class="li__sub">Attach an original referenced paper on some aspect of respiratory care to the online form if applying for an undergraduate award. 
+                                                    The paper should include a cover page giving only the title of the paper, and should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. <span class="underline">See Paper Submission Guidelines</span></li>
+                                                <li class="li__sub">Attach a personal essay of at least 1,200 words describing how this award will assist the applicant in reaching the objective of a degree 
+                                                    and the candidate’s ultimate goals of leadership in health care if applying for the William W. Burgin/Robert Lawrence award. The paper should 
+                                                    include a cover page with the author’s name, address, and phone number. The body of the paper should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. See <span class="underline">Points to Consider in Submitting an Essay</span></li>    
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>Applications are accepted Jan. 1 June 1. Applications will not be considered unless all supporting documents have been sent.</li>
+                                        <br>
+                                        <li>Previous undergraduate award recipients are eligible to reapply. Previous postgraduate award recipients </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="recipients" class="tab__content hidden">
+                                <div><p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <span class="font-semibold">2023</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2022</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2021</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2020</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2019</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2018</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2017</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2016</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2015</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2014</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2013</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2012</span> - Firstname Lastname <br>
+                                </p></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="information__box">
+                    <h3 class=" pb-6 text-3xl font-semibold leading-tight text--tertiary">Morton B. Duggan, Jr. Memorial Education Recognition Award</h3>
+                    <div class="information__box__content" data-tab-group="2">
+                        <div class="information__box__left">
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('general',2)">General Information</p>
+                            <p class="box__left__subtitle py-5 text-lg font-semibold text--tertiary background__remove leading-relaxed" onclick="changeTab('requirements',2)">Requirements</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('application',2)">Application</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('recipients',2)">Past Award Recipients</p>
+                        </div>
+                        <div class="information__box__right">
+                            <div id="general" class="tab__content hidden">
+                                <p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    The Morton B. Duggan, Jr. Memorial Education Recognition Award is awarded to a student 
+                                    currently enrolled in an accredited respiratory care education program. Preference given 
+                                    to candidates from Georgia and South Carolina.
+                                    <br>
+                                    <br>
+                                    The American Respiratory Care Foundation may award up to $1,000 in memory of Morton B. Duggan, Jr. Applicants/nominees are accepted 
+                                    from all states, with preference given to candidates from Georgia and South Carolina. This award consists of a certificate of recognition, 
+                                    coach airfare, one night’s lodging, and registration for AARC Congress.
+                                </p>
+                            </div>
+                            <div id="requirements" class="tab__content">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                               <ul>
+                                <li>Completed application form.</li>
+                                <br>
+                                <li>Must provide verification of enrollment in an accredited respiratory care training program.</li>
+                                <br>
+                                <li>Must provide official transcript verifying a GPA of 3.0 or better on a 4.0 scale, or the equivalent.</li>
+                                <br>
+                                <li>An original referenced paper on some aspect of respiratory care. The paper should include a cover page giving 
+                                    only the title of the paper. The paper should be devoid of any information such as the applicant’s name, address,
+                                     or school that could provide a bias in the evaluation.</li>
+                                <br>
+                                <li>Must provide letters of recommendation from the program director or other senior faculty member and from 
+                                    the medical director or other physician instructor attesting to: a) approval of candidate’s paper, b) candidate’s
+                                     worthiness for the award, and c) candidate’s potential for a career in the profession of respiratory care.</li>
+                                <br>
+                               </ul>
+                               <p>Please note that the application deadline is June 1.</p>
+                            </div>
+                            </div>
+                            <div id="application" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <p class="underline">Paper Submission Guidelines</p>
+                                    <p class="underline">Points to Consider in Submitting an Essay</p>
+                                    <br>
+                                    <ul>
+                                        <li>In addition to submitting some basic personal information, you will also be required to:
+                                            <ul class="">
+                                                <li class="li__sub">Attach an original referenced paper on some aspect of respiratory care to the online form if applying for an undergraduate award. 
+                                                    The paper should include a cover page giving only the title of the paper, and should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. <span class="underline">See Paper Submission Guidelines</span></li>
+                                                <li class="li__sub">Attach a personal essay of at least 1,200 words describing how this award will assist the applicant in reaching the objective of a degree 
+                                                    and the candidate’s ultimate goals of leadership in health care if applying for the William W. Burgin/Robert Lawrence award. The paper should 
+                                                    include a cover page with the author’s name, address, and phone number. The body of the paper should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. See <span class="underline">Points to Consider in Submitting an Essay</span></li>    
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>Applications are accepted Jan. 1 June 1. Applications will not be considered unless all supporting documents have been sent.</li>
+                                        <br>
+                                        <li>Previous undergraduate award recipients are eligible to reapply. Previous postgraduate award recipients </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="recipients" class="tab__content hidden">
+                                <div><p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <span class="font-semibold">2023</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2022</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2021</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2020</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2019</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2018</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2017</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2016</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2015</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2014</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2013</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2012</span> - Firstname Lastname <br>
+                                </p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="information__box">
+                    <h3 class=" pb-6 text-3xl font-semibold leading-tight text--tertiary">Morton B. Duggan, Jr. Memorial Education Recognition Award</h3>
+                    <div class="information__box__content" data-tab-group="3">
+                        <div class="information__box__left">
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('general',3)">General Information</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('requirements',3)">Requirements</p>
+                            <p class="box__left__subtitle py-5 text-lg font-semibold text--tertiary background__remove leading-relaxed " onclick="changeTab('application',3)">Application</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('recipients',3)">Past Award Recipients</p>
+                        </div>
+                        <div class="information__box__right">
+                            <div id="general" class="tab__content hidden">
+                                <p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    The Morton B. Duggan, Jr. Memorial Education Recognition Award is awarded to a student 
+                                    currently enrolled in an accredited respiratory care education program. Preference given 
+                                    to candidates from Georgia and South Carolina.
+                                    <br>
+                                    <br>
+                                    The American Respiratory Care Foundation may award up to $1,000 in memory of Morton B. Duggan, Jr. Applicants/nominees are accepted 
+                                    from all states, with preference given to candidates from Georgia and South Carolina. This award consists of a certificate of recognition, 
+                                    coach airfare, one night’s lodging, and registration for AARC Congress.
+                                </p>
+                            </div>
+                            <div id="requirements" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                               <ul>
+                                <li>Completed application form.</li>
+                                <br>
+                                <li>Must provide verification of enrollment in an accredited respiratory care training program.</li>
+                                <br>
+                                <li>Must provide official transcript verifying a GPA of 3.0 or better on a 4.0 scale, or the equivalent.</li>
+                                <br>
+                                <li>An original referenced paper on some aspect of respiratory care. The paper should include a cover page giving 
+                                    only the title of the paper. The paper should be devoid of any information such as the applicant’s name, address,
+                                     or school that could provide a bias in the evaluation.</li>
+                                <br>
+                                <li>Must provide letters of recommendation from the program director or other senior faculty member and from 
+                                    the medical director or other physician instructor attesting to: a) approval of candidate’s paper, b) candidate’s
+                                     worthiness for the award, and c) candidate’s potential for a career in the profession of respiratory care.</li>
+                                <br>
+                               </ul>
+                               <p>Please note that the application deadline is June 1.</p>
+                            </div>
+                            </div>
+                            <div id="application" class="tab__content ">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <p class="underline">Paper Submission Guidelines</p>
+                                    <p class="underline">Points to Consider in Submitting an Essay</p>
+                                    <br>
+                                    <ul>
+                                        <li>In addition to submitting some basic personal information, you will also be required to:
+                                            <ul class="">
+                                                <li class="li__sub">Attach an original referenced paper on some aspect of respiratory care to the online form if applying for an undergraduate award. 
+                                                    The paper should include a cover page giving only the title of the paper, and should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. <span class="underline">See Paper Submission Guidelines</span></li>
+                                                <li class="li__sub">Attach a personal essay of at least 1,200 words describing how this award will assist the applicant in reaching the objective of a degree 
+                                                    and the candidate’s ultimate goals of leadership in health care if applying for the William W. Burgin/Robert Lawrence award. The paper should 
+                                                    include a cover page with the author’s name, address, and phone number. The body of the paper should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. See <span class="underline">Points to Consider in Submitting an Essay</span></li>    
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>Applications are accepted Jan. 1 June 1. Applications will not be considered unless all supporting documents have been sent.</li>
+                                        <br>
+                                        <li>Previous undergraduate award recipients are eligible to reapply. Previous postgraduate award recipients </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="recipients" class="tab__content hidden">
+                                <div><p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <span class="font-semibold">2023</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2022</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2021</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2020</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2019</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2018</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2017</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2016</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2015</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2014</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2013</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2012</span> - Firstname Lastname <br>
+                                </p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="information__box">
+                    <h3 class=" pb-6 text-3xl font-semibold leading-tight text--tertiary">Morton B. Duggan, Jr. Memorial Education Recognition Award</h3>
+                    <div class="information__box__content" data-tab-group="4">
+                        <div class="information__box__left">
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('general',4)">General Information</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('requirements',4)">Requirements</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('application',4)">Application</p>
+                            <p class="box__left__subtitle py-5 text-lg font-semibold text--tertiary background__remove leading-relaxed" onclick="changeTab('recipients',4)">Past Award Recipients</p>
+                        </div>
+                        <div class="information__box__right">
+                            <div id="general" class="tab__content hidden">
+                                <p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    The Morton B. Duggan, Jr. Memorial Education Recognition Award is awarded to a student 
+                                    currently enrolled in an accredited respiratory care education program. Preference given 
+                                    to candidates from Georgia and South Carolina.
+                                    <br>
+                                    <br>
+                                    The American Respiratory Care Foundation may award up to $1,000 in memory of Morton B. Duggan, Jr. Applicants/nominees are accepted 
+                                    from all states, with preference given to candidates from Georgia and South Carolina. This award consists of a certificate of recognition, 
+                                    coach airfare, one night’s lodging, and registration for AARC Congress.
+                                </p>
+                            </div>
+                            <div id="requirements" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                               <ul>
+                                <li>Completed application form.</li>
+                                <br>
+                                <li>Must provide verification of enrollment in an accredited respiratory care training program.</li>
+                                <br>
+                                <li>Must provide official transcript verifying a GPA of 3.0 or better on a 4.0 scale, or the equivalent.</li>
+                                <br>
+                                <li>An original referenced paper on some aspect of respiratory care. The paper should include a cover page giving 
+                                    only the title of the paper. The paper should be devoid of any information such as the applicant’s name, address,
+                                     or school that could provide a bias in the evaluation.</li>
+                                <br>
+                                <li>Must provide letters of recommendation from the program director or other senior faculty member and from 
+                                    the medical director or other physician instructor attesting to: a) approval of candidate’s paper, b) candidate’s
+                                     worthiness for the award, and c) candidate’s potential for a career in the profession of respiratory care.</li>
+                                <br>
+                               </ul>
+                               <p>Please note that the application deadline is June 1.</p>
+                            </div>
+                            </div>
+                            <div id="application" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <p class="underline">Paper Submission Guidelines</p>
+                                    <p class="underline">Points to Consider in Submitting an Essay</p>
+                                    <br>
+                                    <ul>
+                                        <li>In addition to submitting some basic personal information, you will also be required to:
+                                            <ul class="">
+                                                <li class="li__sub">Attach an original referenced paper on some aspect of respiratory care to the online form if applying for an undergraduate award. 
+                                                    The paper should include a cover page giving only the title of the paper, and should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. <span class="underline">See Paper Submission Guidelines</span></li>
+                                                <li class="li__sub">Attach a personal essay of at least 1,200 words describing how this award will assist the applicant in reaching the objective of a degree 
+                                                    and the candidate’s ultimate goals of leadership in health care if applying for the William W. Burgin/Robert Lawrence award. The paper should 
+                                                    include a cover page with the author’s name, address, and phone number. The body of the paper should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. See <span class="underline">Points to Consider in Submitting an Essay</span></li>    
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>Applications are accepted Jan. 1 June 1. Applications will not be considered unless all supporting documents have been sent.</li>
+                                        <br>
+                                        <li>Previous undergraduate award recipients are eligible to reapply. Previous postgraduate award recipients </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="recipients" class="tab__content ">
+                                <div><p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <span class="font-semibold">2023</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2022</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2021</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2020</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2019</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2018</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2017</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2016</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2015</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2014</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2013</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2012</span> - Firstname Lastname <br>
+                                </p></div>
+                            </div>
+                            
+
+                        </div>
 
 
                     </div>
 
                 </div>
-
-                <div class="information__box">
-                    <h3 class="information__box__title pb-6 text-3xl font-semibold leading-tight text--tertiary">Charles D. McArthur Memorial Scholarship Education Recognition Award</h3>
-                    <div class="information__box__content">
-                        <div class="information__box__left">
-                            <p class="box__left__subtitle py-5 text--tertiary text-lg font-semibold leading-relaxed ">General Information</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed  ">Requirements</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Application</p>
-                            <p class="box__left__subtitle--true  py-5 text-lg font-normal leading-relaxed ">Past Award Recipients</p>
-                        </div>
-                        <div class="information__box__right">
-                            <p class= "pt-6 text-lg font-normal leading-relaxed">
-                                <span class="font-semibold">2023</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2022</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2021</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2020</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2019</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2018</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2017</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2016</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2015</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2014</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2013</span> - Firstname Lastname <br>
-                                <span class="font-semibold">2012</span> - Firstname Lastname <br>
-                            </p>
-                        </div>
-
-
-                    </div>
-
-                </div> 
             </div>
 
-            <div class="information__content">
+            <div class="information__content" >
                 <h3 class="information__content__title text-5xl font-bold leading-14">Postgraduate Student Awards</h3>
                 <div class="information__content__describe">
-                    <p class="text-lg font-normal leading-relaxed">The ARCF offers the following Education Recognition Awards to respiratory therapists who are pursuing an advanced degree. 
-                        All awards include a certificate of recognition, coach airfare, one night’s lodging, and registration for the AARC Congress.
-                        Applications are accepted Jan. 1–June 1.</p>
+                    <p class="text-lg font-normal leading-relaxed">The American Respiratory Care Foundation and the National Board for Respiratory Care awards up to $5,000 
+                        in memory of Gareth B. Gish, MS, RRT to a respiratory therapist pursuing postgraduate education leading to an advanced degree. The award consists of a 
+                        certificate of recognition, coach airfare, one night’s lodging, and registration for AARC Congress. May also include a cash award up to $5,000.
+
+                        The Gareth B. Gish award was established in 1999 in memory of Mr. Gish, who was a true pioneer of the profession. Mr. Gish made enormous contributions to our
+                         understanding of the science of respiratory care and mentored literally thousands of therapists throughout his career.
+                    </p>
                 </div>
                 <div class="information__box">
                     <h3 class="information__box__title pb-6 text-3xl font-semibold leading-tight text--tertiary">NBRC Gareth B. Gish, MS, RRT Memorial Postgraduate Education Recognition Award</h3>
-                    <div class="information__box__content">
+                    <div class="information__box__content" data-tab-group="5">
                         <div class="information__box__left">
-                            <p class="box__left__subtitle--true py-5 text--tertiary text-lg font-semibold leading-relaxed ">General Information</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed  ">Requirements</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Application</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Past Award Recipients</p>
+                            <p class="box__left__subtitle py-5 text-lg font-semibold text--tertiary background__remove leading-relaxed" onclick="changeTab('general',5)">General Information</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('requirements',5)">Requirements</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('application',5)">Application</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('recipients',5)">Past Award Recipients</p>
                         </div>
                         <div class="information__box__right">
-                            <p class= "pt-6 text-lg font-normal leading-relaxed">
-                                The American Respiratory Care Foundation and the National Board for Respiratory Care awards up to $5,000 in memory of Gareth B. Gish, MS, RRT to a respiratory 
-                                therapist pursuing postgraduate education leading to an advanced degree. The award consists of a certificate of recognition, coach airfare, one night’s lodging, 
-                                and registration for AARC Congress. May also include a cash award up to $5,000.
+                            <div id="general" class="tab__content">
+                                <p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    The Morton B. Duggan, Jr. Memorial Education Recognition Award is awarded to a student 
+                                    currently enrolled in an accredited respiratory care education program. Preference given 
+                                    to candidates from Georgia and South Carolina.
+                                    <br>
+                                    <br>
+                                    The American Respiratory Care Foundation may award up to $1,000 in memory of Morton B. Duggan, Jr. Applicants/nominees are accepted 
+                                    from all states, with preference given to candidates from Georgia and South Carolina. This award consists of a certificate of recognition, 
+                                    coach airfare, one night’s lodging, and registration for AARC Congress.
+                                </p>
+                            </div>
+                            <div id="requirements" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                               <ul>
+                                <li>Completed application form.</li>
                                 <br>
+                                <li>Must provide verification of enrollment in an accredited respiratory care training program.</li>
                                 <br>
-                                The Gareth B. Gish award was established in 1999 in memory of Mr. Gish, who was a true pioneer of the profession. Mr. Gish made enormous contributions to our 
-                                understanding of the science of respiratory care and mentored literally thousands of therapists throughout his career.
-                            </p>
+                                <li>Must provide official transcript verifying a GPA of 3.0 or better on a 4.0 scale, or the equivalent.</li>
+                                <br>
+                                <li>An original referenced paper on some aspect of respiratory care. The paper should include a cover page giving 
+                                    only the title of the paper. The paper should be devoid of any information such as the applicant’s name, address,
+                                     or school that could provide a bias in the evaluation.</li>
+                                <br>
+                                <li>Must provide letters of recommendation from the program director or other senior faculty member and from 
+                                    the medical director or other physician instructor attesting to: a) approval of candidate’s paper, b) candidate’s
+                                     worthiness for the award, and c) candidate’s potential for a career in the profession of respiratory care.</li>
+                                <br>
+                               </ul>
+                               <p>Please note that the application deadline is June 1.</p>
+                            </div>
+                            </div>
+                            <div id="application" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <p class="underline">Paper Submission Guidelines</p>
+                                    <p class="underline">Points to Consider in Submitting an Essay</p>
+                                    <br>
+                                    <ul>
+                                        <li>In addition to submitting some basic personal information, you will also be required to:
+                                            <ul class="">
+                                                <li class="li__sub">Attach an original referenced paper on some aspect of respiratory care to the online form if applying for an undergraduate award. 
+                                                    The paper should include a cover page giving only the title of the paper, and should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. <span class="underline">See Paper Submission Guidelines</span></li>
+                                                <li class="li__sub">Attach a personal essay of at least 1,200 words describing how this award will assist the applicant in reaching the objective of a degree 
+                                                    and the candidate’s ultimate goals of leadership in health care if applying for the William W. Burgin/Robert Lawrence award. The paper should 
+                                                    include a cover page with the author’s name, address, and phone number. The body of the paper should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. See <span class="underline">Points to Consider in Submitting an Essay</span></li>    
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>Applications are accepted Jan. 1 June 1. Applications will not be considered unless all supporting documents have been sent.</li>
+                                        <br>
+                                        <li>Previous undergraduate award recipients are eligible to reapply. Previous postgraduate award recipients </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="recipients" class="tab__content hidden">
+                                <div><p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <span class="font-semibold">2023</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2022</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2021</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2020</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2019</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2018</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2017</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2016</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2015</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2014</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2013</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2012</span> - Firstname Lastname <br>
+                                </p></div>
+                            </div>
                         </div>
-
-
                     </div>
 
                 </div>
 
-                <div class="information__box">
-                    <h3 class="information__box__title pb-6 text-3xl font-semibold leading-tight text--tertiary">William F. Miller, MD Postgraduate Education Recognition Award</h3>
-                    <div class="information__box__content">
+                <div class="information__box" data-tab-group="6">
+                    <h3 class="information__box__title pb-6 text-3xl font-semibold leading-tight text--tertiary">NBRC Gareth B. Gish, MS, RRT Memorial Postgraduate Education Recognition Award</h3>
+                    <div class="information__box__content" data-tab-group="5">
                         <div class="information__box__left">
-                            <p class="box__left__subtitle--true py-5 text--tertiary text-lg font-semibold leading-relaxed ">General Information</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed  ">Requirements</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Application</p>
-                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed ">Past Award Recipients</p>
+                            <p class="box__left__subtitle py-5 text-lg font-semibold text--tertiary background__remove leading-relaxed" onclick="changeTab('general',6)">General Information</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed" onclick="changeTab('requirements',6)">Requirements</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('application',6)">Application</p>
+                            <p class="box__left__subtitle py-5 text-lg font-normal leading-relaxed " onclick="changeTab('recipients',6)">Past Award Recipients</p>
                         </div>
                         <div class="information__box__right">
-                            <p class= "pt-6 text-lg font-normal leading-relaxed">
-                                The American Respiratory Care Foundation awards up to $5,000 to assist qualified respiratory therapists in the pursuit of postgraduate education 
-                                leading to an advanced degree. This award was established by a contribution from William F. Miller, MD in 1992. The award also consists of a certificate of recognition, 
-                                coach airfare, one night’s lodging, and registration for AARC Congress.
-                            </p>
+                            <div id="general" class="tab__content">
+                                <p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    The American Respiratory Care Foundation awards up to $5,000 to assist qualified respiratory therapists in the pursuit of postgraduate education leading 
+                                    to an advanced degree. This award was established by a contribution from William F. Miller, MD in 1992. The award also consists of a certificate of recognition, 
+                                    coach airfare, one night’s lodging, and registration for AARC Congress.
+                                </p>
+                            </div>
+                            <div id="requirements" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                               <ul>
+                                <li>Completed application form.</li>
+                                <br>
+                                <li>Must provide verification of enrollment in an accredited respiratory care training program.</li>
+                                <br>
+                                <li>Must provide official transcript verifying a GPA of 3.0 or better on a 4.0 scale, or the equivalent.</li>
+                                <br>
+                                <li>An original referenced paper on some aspect of respiratory care. The paper should include a cover page giving 
+                                    only the title of the paper. The paper should be devoid of any information such as the applicant’s name, address,
+                                     or school that could provide a bias in the evaluation.</li>
+                                <br>
+                                <li>Must provide letters of recommendation from the program director or other senior faculty member and from 
+                                    the medical director or other physician instructor attesting to: a) approval of candidate’s paper, b) candidate’s
+                                     worthiness for the award, and c) candidate’s potential for a career in the profession of respiratory care.</li>
+                                <br>
+                               </ul>
+                               <p>Please note that the application deadline is June 1.</p>
+                            </div>
+                            </div>
+                            <div id="application" class="tab__content hidden">
+                                <div class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <p class="underline">Paper Submission Guidelines</p>
+                                    <p class="underline">Points to Consider in Submitting an Essay</p>
+                                    <br>
+                                    <ul>
+                                        <li>In addition to submitting some basic personal information, you will also be required to:
+                                            <ul class="">
+                                                <li class="li__sub">Attach an original referenced paper on some aspect of respiratory care to the online form if applying for an undergraduate award. 
+                                                    The paper should include a cover page giving only the title of the paper, and should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. <span class="underline">See Paper Submission Guidelines</span></li>
+                                                <li class="li__sub">Attach a personal essay of at least 1,200 words describing how this award will assist the applicant in reaching the objective of a degree 
+                                                    and the candidate’s ultimate goals of leadership in health care if applying for the William W. Burgin/Robert Lawrence award. The paper should 
+                                                    include a cover page with the author’s name, address, and phone number. The body of the paper should be devoid of any information such as applicant’s 
+                                                    name, address, or school that could provide a bias in the evaluation. See <span class="underline">Points to Consider in Submitting an Essay</span></li>    
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>Applications are accepted Jan. 1 June 1. Applications will not be considered unless all supporting documents have been sent.</li>
+                                        <br>
+                                        <li>Previous undergraduate award recipients are eligible to reapply. Previous postgraduate award recipients </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="recipients" class="tab__content hidden">
+                                <div><p class= "pt-6 text-lg font-normal leading-relaxed">
+                                    <span class="font-semibold">2023</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2022</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2021</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2020</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2019</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2018</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2017</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2016</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2015</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2014</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2013</span> - Firstname Lastname <br>
+                                    <span class="font-semibold">2012</span> - Firstname Lastname <br>
+                                </p></div>
+                            </div>
                         </div>
-
-
                     </div>
 
                 </div>
             </div>
 
-            <div class="bg--title py-15 section ">
+            <div class="bg--title py-15 section">
                 <p class="text-lg font-normal leading-relaxed ">The above listed awards, grants and fellowships may have tax implications to the recipient. Depending on the circumstance 
                     and filing requirements, an information tax form (i.e. 1099) may or may not be issued from the ARCF. In any case, we recommend 
                     that all recipients consult with their tax advisor to ensure compliance with IRS regulations.</p>
             </div>
 
         </section>
-
-       
 
         <section class="conference__section">
             <div class="conference__left bg--tertiary">
@@ -268,16 +612,16 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn--primary btn--large">Donate Now</button>
+                    <button class="btn btn--primary conference__buttonleft">Donate Now</button>
                 </div>
             </div>
-
+    
             <div class="conference__right bg--primary">
                 <div class="conference__contentright">
                     <h3 class="conference__title">61st Respiratory Care <br> Journal Conference</h3>
                     <p class="conference__describe">June 19-21, 2024 <br> Tampa, FL</p>
                     <p class="conference__info">Pediatric Asthma: Management <br> Across the Continuum of Care</p>
-                    <button class="btn btn--primary btn--large">Sponsorship Opportunities</button>  
+                    <button class="btn btn--primary conference__buttonright">Sponsorship Opportunities</button>  
                 </div>
                 <div class="conference__img">
                     <img src="./img/conference.png" alt=""> 
@@ -347,6 +691,6 @@
 
 
     </footer>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
